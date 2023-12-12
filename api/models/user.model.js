@@ -14,7 +14,11 @@ const userSchema =  new mongoose.Schema({
     password:{
         type: String,
         required : true
-    }
+    },
+    avatar:{
+        type:String,
+        default: "https://cdn.vectorstock.com/i/preview-1x/17/61/male-avatar-profile-picture-vector-10211761.jpg"
+    },
 },
 { timestamps: true}
 );
